@@ -16,7 +16,8 @@ z = result_real + result_imag
 
 **Схемотехника**:
 
-![sch](https://user-images.githubusercontent.com/91137374/162632260-9f4041dc-e6ff-46c6-b530-4e6ee98fc32b.png)
+![sch1](https://user-images.githubusercontent.com/91137374/164090398-25e3ce51-7259-4fa2-b7d3-644db6fb409e.png)
 
 **Временные диаграммы**:
+
 ![Timing](https://user-images.githubusercontent.com/91137374/164089380-aa78ff3c-53bb-4b08-8216-cf0acb966009.png)
