@@ -35,17 +35,11 @@ z = result_real + result_imag
 ![task2](https://user-images.githubusercontent.com/91137374/164092526-52144f00-2c9d-4b37-99dc-423d1090ef44.png)
 
 **Описание работы модуля**:
-На вход поступают два 8-битных комплексных числа. Алгоритм комплексного умножения:
 
-z = a1xa2 - b1xb2 + a1xb2(i) + a2xb1(i)
-
-z = z0 - z1 + z2 + z3 - 16-битное комплексное число
-z = result_real + result_imag
 
 **Схемотехника**:
 
-![sch1](https://user-images.githubusercontent.com/91137374/164090398-25e3ce51-7259-4fa2-b7d3-644db6fb409e.png)
+
 
 **Временные диаграммы**:
 
-![Timing](https://user-images.githubusercontent.com/91137374/164089380-aa78ff3c-53bb-4b08-8216-cf0acb966009.png)
