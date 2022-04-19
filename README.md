@@ -12,9 +12,11 @@
 z = a1xa2 - b1xb2 + a1xb2(i) + a2xb1(i)
 
 z = z0 - z1 + z2 + z3 - 16-битное комплексное число
+z = result_real + result_imag
 
 **Схемотехника**:
 
 ![sch](https://user-images.githubusercontent.com/91137374/162632260-9f4041dc-e6ff-46c6-b530-4e6ee98fc32b.png)
 
 **Временные диаграммы**:
+![Timing](https://user-images.githubusercontent.com/91137374/164089380-aa78ff3c-53bb-4b08-8216-cf0acb966009.png)
