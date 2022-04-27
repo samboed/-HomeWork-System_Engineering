@@ -46,5 +46,4 @@ z = result_real + result_imag
 
 **Временные диаграммы**:
 
-![изображение](https://user-images.githubusercontent.com/91137374/165487631-68583a17-0498-4654-bd67-4d148cd3d508.png)
-
+![Task2_time](https://user-images.githubusercontent.com/91137374/165488920-1103d188-afa2-43ce-b8fe-0e20926e91a7.png)
