@@ -42,7 +42,7 @@ z = result_real + result_imag
 
 **Схемотехника**:
 
-
+![sch2](https://user-images.githubusercontent.com/91137374/165488605-a149484a-9dc3-4a17-8230-fbda101bdfdf.png)
 
 **Временные диаграммы**:
 
