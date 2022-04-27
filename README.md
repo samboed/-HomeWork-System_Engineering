@@ -38,7 +38,7 @@ enable - приём по одному биту информации bit_in за 
 num_end - сигнал, сообщающий о завершении передачи числа;
 res_out - результат деления переданного числа на 3.
 
-![Task2](https://user-images.githubusercontent.com/91137374/165484399-0019d017-86b2-4579-9cad-2527cad98c57.png)
+![Task2](https://user-images.githubusercontent.com/91137374/165484690-c6251de3-76de-4db3-8233-10c35ea52a55.png)
 
 **Схемотехника**:
 
