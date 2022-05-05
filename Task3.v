@@ -14,7 +14,7 @@ module Task3(
 				
 reg mult_en = 0;
 reg mult_counter;
-reg [7:0] z;
+reg [17:0] z;
 reg [7:0] x0,y0,x1,y1;
 reg [15:0] result_mult0;
 reg [15:0] result_mult1;
