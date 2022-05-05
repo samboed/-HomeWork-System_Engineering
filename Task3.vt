@@ -1,0 +1,70 @@
+`timescale 1 ns/ 1 ns
+module Task3_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [7:0] A0;
+reg [7:0] A1;
+reg [7:0] A2;
+reg [7:0] A3;
+reg [7:0] X0;
+reg [7:0] X1;
+reg [7:0] X2;
+reg [7:0] X3;
+reg clk;
+reg enable;
+// wires                                               
+wire [17:0]  result;
+
+// assign statements (if any)                          
+Task3 i1 (
+// port map - connection between master ports and signals/registers   
+	.A0(A0),
+	.A1(A1),
+	.A2(A2),
+	.A3(A3),
+	.X0(X0),
+	.X1(X1),
+	.X2(X2),
+	.X3(X3),
+	.clk(clk),
+	.enable(enable),
+	.result(result)
+);
+initial                                                
+begin   
+	A0 = 10;
+	A1 = 25;
+	A2 = 10;
+	A3 = 0;
+	X0 = 225;
+	X1 = 178;
+	X2 = 124;
+	X3 = 0;      
+	clk = 0;
+	enable = 0;
+	#5
+	enable = 1;
+	#5
+	enable = 0;
+	#15
+	enable = 1;
+	A0 = 25;
+	A1 = 75;
+	A2 = 25;
+	A3 = 0;
+	X0 = 18;
+	X1 = 15;
+	X2 = 16;
+	#5
+	enable = 0;
+	                                         
+	           
+end                                                    
+always                                                                 
+begin                                                  
+    #5 clk = ~clk;                                       
+end                                                    
+endmodule
+
