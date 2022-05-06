@@ -9,15 +9,15 @@ module Task3(
 					input [7:0] A3, // reserve - КИХ-фильтр 4 порядка
 					input clk,
 					input enable,
-					output reg [17:0] result
+					output reg signed [17:0] result
 				);
 				
 reg mult_en = 0;
 reg mult_counter;
-reg [17:0] z;
-reg [7:0] x0,y0,x1,y1;
-reg [15:0] result_mult0;
-reg [15:0] result_mult1;
+reg signed [17:0] z;
+reg signed [7:0] x0,y0,x1,y1;
+reg signed [15:0] result_mult0;
+reg signed [15:0] result_mult1;
 
 always @(posedge clk)
 begin
