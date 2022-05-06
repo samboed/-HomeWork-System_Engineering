@@ -72,4 +72,5 @@ enable - запуск расчёта КИХ-фильтра
 
 **Временные диаграммы**:
 
-![Task3_time](https://user-images.githubusercontent.com/91137374/166964353-8dad3cee-0c4e-4042-a7b8-7452856b762a.png)
+![Task3_time](https://user-images.githubusercontent.com/91137374/167149173-58dfa6c3-0b6a-4117-acef-dcb68065cc5c.png)
+
