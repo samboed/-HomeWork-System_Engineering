@@ -27,24 +27,24 @@ end
 
 always @(posedge clk)
 begin	
-	x0 = mult_counter == 0 ? A0:A1;
-	y0 = mult_counter == 0 ? X0:X1;
-	x1 = mult_counter == 0 ? A2:A3;
-	y1 = mult_counter == 0 ? X2:X3;
+	x0 <= mult_counter == 0 ? A0:A1;
+	y0 <= mult_counter == 0 ? X0:X1;
+	x1 <= mult_counter == 0 ? A2:A3;
+	y1 <= mult_counter == 0 ? X2:X3;
 end
 
 always @(*)
 begin	
 	if (mult_en)
 	begin
-		z = mult_counter == 0 ? result_mult0 + result_mult1 : z;
+		z <= mult_counter == 0 ? result_mult0 + result_mult1 : z;
 		result <= mult_counter == 1 ? z + result_mult0 + result_mult1 : 0;
 	end
 end
 
 always @(*)
 begin
-	result_mult0 = x0*y0;
-	result_mult1 = x1*y1;
+	result_mult0 <= x0*y0;
+	result_mult1 <= x1*y1;
 end
 endmodule
