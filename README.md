@@ -68,7 +68,7 @@ enable - запуск расчёта КИХ-фильтра
 
 **Схемотехника**:
 
-![sch3](https://user-images.githubusercontent.com/91137374/166964321-78d66b5b-3351-4c03-891f-b7634919bd95.png)
+![sch3](https://user-images.githubusercontent.com/91137374/167150285-a10b26c7-2fbc-4613-98ca-1f2b85f6b8fd.png)
 
 **Временные диаграммы**:
 
