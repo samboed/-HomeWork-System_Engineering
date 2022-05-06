@@ -38,9 +38,9 @@ begin
 	A1 = 25;
 	A2 = 10;
 	A3 = 0;
-	X0 = 225;
-	X1 = 178;
-	X2 = 124;
+	X0 = 15;
+	X1 = -10;
+	X2 = 27;
 	X3 = 0;      
 	clk = 0;
 	enable = 0;
@@ -67,4 +67,3 @@ begin
     #5 clk = ~clk;                                       
 end                                                    
 endmodule
-
