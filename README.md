@@ -90,8 +90,10 @@ output wire [23:0] wr_address_out,
 **Описание работы модуля**:
 
 
+
 **Схемотехника**:
 
+![изображение](https://user-images.githubusercontent.com/91137374/171742089-5e1c76f9-fc72-474b-bdbb-58aece8d2896.png)
 
 **Временные диаграммы**:
 
