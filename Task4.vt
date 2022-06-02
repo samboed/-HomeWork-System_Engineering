@@ -1,0 +1,267 @@
+`timescale 1 ns/ 1 ns
+module Task4_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg cs;
+reg mosi;
+reg sck;
+// wires                                               
+wire miso;
+wire [23:0]  wr_address_out;
+wire [31:0]  wr_data_out;
+wire wr_en_out;
+
+// assign statements (if any)                          
+Task4 i1 (
+// port map - connection between master ports and signals/registers   
+	.cs(cs),
+	.miso(miso),
+	.mosi(mosi),
+	.sck(sck),
+	.wr_address_out(wr_address_out),
+	.wr_data_out(wr_data_out),
+	.wr_en_out(wr_en_out)
+);
+initial                                                
+begin                                                  
+	sck = 1'b0;
+	cs = 1'b0;
+	// 0111 0111 - command "w"
+	mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	// adr
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;  
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	//data
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;  
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1; 
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1; 
+
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;   
+	
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+  #10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+  #10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	#10 cs = 1'b1;
+	#10 cs = 1'b0;  
+
+	// 0111 0111 - command "w"
+	mosi =  0;
+  #10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+  #10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	// adr
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;  
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	//data
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;  
+
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1; 
+
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  0;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  1;
+	#10 mosi =  0;
+	#10 mosi =  0;
+
+	#10 cs = 1'b1; 
+    
+end                                                    
+always                                                              
+begin                                                  
+	#5 sck = ~sck;                                      
+end                                                    
+endmodule
