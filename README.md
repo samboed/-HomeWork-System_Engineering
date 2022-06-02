@@ -95,5 +95,4 @@ output wire [23:0] wr_address_out,
 
 **Временные диаграммы**:
 
-
-
+![изображение](https://user-images.githubusercontent.com/91137374/171741845-bebd9d52-1ee0-4885-9c65-ec1fcd483a67.png)
