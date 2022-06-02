@@ -93,9 +93,9 @@ output wire [23:0] wr_address_out,
   CS — выбор ведомого (Chip Select);  
   MOSI — выход ведущего, вход ведомого (Master Out Slave In). Передача данных от ведущего устройства ведомому;  
   MISO — вход ведущего, выход ведомого (Master In Slave Out). Передача данных от ведомого устройства ведущему (serial output);  
-  wr_en_out - включение драйвера передачи; (parallel output)  
-  wr_address_out - адресная инструкция (информация);  (parallel output)  
-  wr_data_out - выходные данные; (parallel output)  
+  wr_en_out - включение драйвера передачи (parallel output);    
+  wr_address_out - адресная инструкция (информация)  (parallel output);    
+  wr_data_out - выходные данные (parallel output);    
 
 **Схемотехника**:
 
